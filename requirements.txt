@@ -1,0 +1,6 @@
+openai>=1.3.5
+python-dotenv
+beautifulsoup4
+requests
+selenium
+couchbase>=4.1.6
