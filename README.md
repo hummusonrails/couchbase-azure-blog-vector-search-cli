@@ -70,6 +70,25 @@ The document key is the blog post URL.
 - Azure OpenAI account with access to the `text-embedding-3-small` model
 - Couchbase Capella with a vector index enabled on the `embedding` field
 
+## Azure OpenAI Setup Guide
+
+To use this tool, you must deploy the `text-embedding-3-small` model via the Azure OpenAI Service. Follow these steps:
+
+### 1. Open Your Azure OpenAI Resource
+![Azure OpenAI overview screen](./readme-images/azure-step1.png)
+
+Click **Explore Azure AI Foundry portal** to begin model setup.
+
+### 2. Deploy the Embedding Model
+![Azure deploy model screen](./readme-images/azure-step2.png)
+
+Once in the Azure AI Foundry portal, go to **Deployments** → click **+ Deploy model** → and choose the `text-embedding-3-small` model.
+
+### 3. Copy Endpoint and Keys
+![Azure keys and endpoint](./readme-images/azure-step3.png)
+
+Copy your API key and endpoint from the **Keys and Endpoint** section and paste them into your `.env` file.
+
 ## Troubleshooting
 
 ❌ **Azure OpenAI Resource Not Found API Error**? 
